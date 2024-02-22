@@ -1,56 +1,17 @@
 <html>
     <head>
-        <title>Position CSS</title>
-        <link rel = "stylesheet" type = "text/css" href = "stylePosition.css">
+        <title>Menggunakan Float</title>
+        <link rel = "stylesheet" type = "text/css" href = "styleFloat.css">
     </head>
     <body>
-        <h2>Position : static;</h2>
-        <p>Position static digunakan untuk mengatur elemen menjadi statis secara default.
-            Elemen akan mengikuti posisi normal secara default,
-            elemen tidak dipengaruhi oleh properti seperti top, bottom, left, dan right
-        </p>
-        <div class = "static">
-            Elemen ini diatur menggunakan posisi : static;
-        </div><br><br>
-        <h2>Position : relative;</h2>
-        <p>Sebuah elemen HTMLyang menggunakan position relative akan terletak pada posisi normal.
-            Mengatur posisi atas, kanan, bawah, dan kiri dari elemen yang diposisikan dengan "relatif"
-            akan membuatnya jauh dari posisi normalnya.
-            Konten lain tidak akan disesuaikan dengan celah yang ditinggalkan oleh elemen tersebut.
-        </p>
-        <div class = "relative">
-            Elemen ini diatur menggunakan posisi : relative;
-        </div><br><br>
-        <h2>Position : fixed;</h2>
-        <p>Sebuah elemen HTML yang disetting dengan position fixed akan memiliki sifat tetap,
-            tanpa ada perubahan bahkan jika halamanwebsite discroll.
-            Berlaku pengaturan left, bottom, top, dan rigth pada position fixed.
-        </p>
-        <div class = "fixed">
-            Elemen ini diatur menggunakan posisi : fixed;
-        </div><br><br>
-        <h2>Position : absolute;</h2>
-        <p>Elemen HTML yang menggunakan position absolute akan diposisikan relatif dengan elemen lain yang mendahuluinya yang terdekat,
-            bukan relatif terhadap layar secara normal.
-        </p>
-        <div class = "relative1">Elemen ini diatur menggunakan posisi : relative;
-            <div class = "absolute">Elemen ini diatur menggunakan posisi : absolute:</div>
-        </div><br><br>
-        <h2>Position : sticky;</h2>
-        <p>Cobalah untuk <b>scroll</b> untuk mengetahui bagaimana posisi sticky bekerja</p>
-        <p>Catatan : IE/Edge 15 dan versi lebih lama tidak mendukung sticky</p>
-        <div class = "sticky">Hola Aku adalah sticky</div>
-        <div style = "padding-bottom : 200px">
-            <p>Dalam contoh ini, elemen sticky menempel pada posisi paling atas halaman (top : 0),
-                ketika mencapai posisi scrollnya.
-            </p>
-            <p>Cobalah untuk melakukan scroll</p>
-            <p>Cobalah untuk melakukan scroll. Lorem ipsum dolor sit amet, consectetur adispicing elit,
+        <h2>Float Kiri</h2><br>
+        <div class = "float1">
+            <P>
+                Lorem ipsum dolor sit amet, consectetur adispicing elit,
                 sed do eiusmod tempor incididunt ut Labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullanco laboris</p>
-            <p>Cobalah untuk melakukan scroll. Lorem ipsum dolor sit amet, consectetur adispicing elit,
-                sed do eiusmod tempor incididunt ut Labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullanco laboris</p>
+                Ut enim ad minim veniam, quis nostrud exercitation ullanco laboris
+                <img class = "gambar" src = "img/lambang-polinema-1.png">
+            </P>
         </div>
     </body>
 </html>
