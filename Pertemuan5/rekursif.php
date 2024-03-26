@@ -9,36 +9,37 @@ $menu = [
             [
                 "nama" => "Wisata",
                 "subMenu" => [
-                    "nama" => "Pantai"
-                ],
-                [
-                    "nama" => "Gunung"
+                    [
+                        "nama" => "Pantai"
+                    ],
+                    [
+                        "nama" => "Gunung"
+                    ]
                 ]
-            ],
-            [
-                "nama" => "Kuliner"
-            ],
-            [
-                "nama" => "Hiburan"
-            ]
+                    ],
+                    [
+                        "nama" => "Kuliner"
+                    ],
+                    [
+                        "nama" => "Hiburan"
+                    ]
         ]
-    ],
-    [
-        "nama" => "Tentang"
-    ],
-    [
-        "nama" => "Kontak"
-    ]
-];
+                    ],
+                    [
+                        "nama" => "Tentang"
+                    ],
+                    [
+                        "nama" => "Kontak"
+                    ],
+                ];
 
-function tampilkanMenuBertingkat(array $menu) {
+function tampilkanMenuBertingkat(array $menu){
     echo "<ul>";
-    foreach($menu as $key => $item) {
-        echo "<li>{$item['nama']}";
-        if (isset($item['subMenu'])) {
+    foreach ($menu as $key => $item) {
+        echo "<li>{$item['nama']}</li>";
+        if(isset($item['subMenu']) && is_array($item['subMenu'])){
             tampilkanMenuBertingkat($item['subMenu']);
         }
-        echo "</li>";
     }
     echo "</ul>";
 }
