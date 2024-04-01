@@ -1,8 +1,10 @@
 <?php
-$pattern = '/apple/';
-$replacement = 'banana';
-$text = 'I like apple pie';
+$pattern = '/go*d/';
+$text = 'god is good';
 echo $text. "<br>";
-$new_text = preg_replace($pattern, $replacement, $text);
-echo $new_text;
+if (preg_match($pattern, $text, $matches)) {
+    echo "Cocokan : " .$matches[0];
+} else {
+    echo "Tidak ada yang cocok!";
+}
 ?>
