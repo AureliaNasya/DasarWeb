@@ -1,5 +1,5 @@
 <?php
-$pattern = '/go*d/';
+$pattern = '/go?d/';
 $text = 'god is good';
 echo $text. "<br>";
 if (preg_match($pattern, $text, $matches)) {
