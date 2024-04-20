@@ -3,8 +3,8 @@ if (isset($_POST["submit"])) {
     $targetDirectory = "uploads/"; //direktori tujuan untuk menyimpan file
     $targetFile = $targetDirectory . basename($_FILES["fileToUpload"]["name"]);
     $fileType = strtolower(pathinfo($targetFile, PATHINFO_EXTENSION));
-    $allowedExtensions = array("jpg", "jpeg", "png", "gif");
-    $maxFileSize = 5 * 1024 * 1024;
+    $allowedExtensions = array("txt", "pdf", "doc", "docx");
+    $maxFileSize = 10 * 1024 * 1024;
 
     if (in_array($fileType, $allowedExtensions) && $_FILES["fileToUpload"]["size"] <= $maxFileSize) {
         if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $targetFile)) {
